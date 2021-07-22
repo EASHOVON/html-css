@@ -55,6 +55,21 @@
             font-family: 'Zen Tokyo Zoo', cursive;
             font-size: 60px;
         }
+
+        #span-test .heading {
+            font-size: 1.7rem;
+            color: orange;
+            font-weight: bold;
+        }
+
+        #span-test .heading span{
+            font-size: 1.7rem;
+            color: crimson;
+        }
+
+        .border-rad{
+            border-radius: 30px;
+        }
     </style>
 </head>
 <body>
@@ -138,6 +153,15 @@
     <div class="font-style">
         <p>এখানে দেখবেন কিভাবে বিভিন্ন স্টাইলের ফন্ট ব্যবহার করা যায়।</p>
         <p class="font">This is Font Change Portion</p>
+    </div>
+
+    <div id="span-test">
+        <p>এখানে ‍স্প্যান ট্যাগ দিয়ে স্পেসিফিক কোনো টেক্সট ডিজাইন করা দেখলাম</p>
+        <h1 class="heading">My Name Is <span>ASR</span>AFUZZ<span>MAN</span></h1>
+    </div>
+
+    <div class="border-rad">
+        <p>এখানে আমরা বর্ডার রেডিয়াস টেস্ট করবো</p>
     </div>
         
 </body>
