@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html | CSS | Revesion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-size: 62.5%;
+        }
+
+        *{
+            font-size: 1.2rem;
+        }
+
+        div{
+            border: 2px solid orange;
+            margin: 20px 20px;
+            padding: 20px 20px;
+        }
+
+        img{
+            width: 50%;
+            height: auto;
+        }
+        input {
+            width: 60%;
+        }
+
+        .named-color{
+            background-color: orange;
+        }
+
+        .hex-code{
+            background-color: #e5c891;
+        }
+
+        .rgb-code{
+            background-color: rgb(153, 102, 83);
+        }
+
+        .width{
+            width: 500px;
+        }
+
+        .height{
+            height: 400px;
+        }
+
+        .font{
+            font-family: 'Zen Tokyo Zoo', cursive;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>যা যা শিখলাম আমরা মাইলস্টোন-১ ও মাইলস্টোন-২ এ</h1>
+        <p>এখন যে ট্যাগ এর মধ্যে লেখাগুলো রেখেছি এটির মাধ্যমে প্যারাগ্রাফ আকারে টেক্সকে ওয়েব সাইটে দেখানো হয়। এছাড়া কিভাবে লেখাকে <b>একটু মোটা</b>, <i>একটু বাকা</i>, <strong>একটু স্ট্রং</strong> কিভাবে দেখানো যায় তা শিখলাম।</p>
+    </div>
+    <div>
+        <a href="#">এটি একটি এংকর ট্যাগ আর এর মাঝে এট্রিবিউটও ব্যবহার করা হয়েছে। রিভিশনে কি কি রেখেছি তা দেখতে আমাকে ক্লিক করুন</a>
+    </div>
+
+    <div>
+        <p>এখন দেখুন কিভাবে অনলাইন থেকে ছবির লিংক ব্যবহার করে তা আমার ওয়েব সাইটে দেখাই। নিচে দেখুন</p>
+        <div>
+            <img src="https://images.unsplash.com/photo-1626876990243-533c63943aa0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="From Internet">
+            <p>এই ছবিটি অনলাইন থেকে নেওয়া</p>
+        </div>
+    </div>
+
+    <div>
+        <p>ইনডেক্স ফাইলের ডিরেক্টরি থেকে ছবিটি দেখানো হচ্ছে এখন নিচে দেখুন</p>
+        <img src="nature.jpg" alt="Root Directory Image">
+    </div>
+
+    <div>
+        <p>ফোল্ডার থেকে ইমেজ দেখানো হচ্ছে নিচে দেখুন</p>
+        <img src="images/nature2.jpg" alt="">
+    </div>
+
+    <div>
+        <p>এখন দেখছেন অর্ডার লিস্ট</p>
+        <ol>
+            <li>ওর্ডার লিস্ট-১</li>
+            <li>ওর্ডার লিস্ট-২</li>
+            <li>ওর্ডার লিস্ট-৩</li>
+            <li>ওর্ডার লিস্ট-৪</li>
+        </ol>
+    </div>
+
+    <div>
+        <p>এখন দেখছেন আন অর্ডার লিস্ট</p>
+        <ul>
+            <li>আন ওর্ডার লিস্ট-১</li>
+            <li>আন ওর্ডার লিস্ট-২</li>
+            <li>আন ওর্ডার লিস্ট-৩</li>
+            <li>আন ওর্ডার লিস্ট-৪</li>
+        </ul>
+    </div>
+
+    <div>
+        <p>এখন দেখছেন বাটন ট্যাগ</p>
+        <button type="submit">আমি হই বাটন, আমাকে চাপুন</button>
+    </div>
+    <div>
+        <p>এখন দেখছেন কিছু ইনপুট ফিল্ড</p>
+        <input type="text" name="" id="" placeholder="এই ইনপুট ফিল্ডটা টেক্সট এর জন্য"> এখানে দুইটা break tag ব্যহার করা হয়েছে <br> <br>
+        <input type="password" name="" id="" placeholder="এই ইনপুট ফিল্ডটা পাসওয়ার্ড এর জন্য">
+    </div>
+    <div>
+        <p>এখন দেখছেন ‍স্মল ট্যাগ বা ছোট লেখা ওয়ালা ট্যাগ</p>
+        <small>এখানে লেখাগুলোকে নরমাল টেক্সট এর চেয়ে ছোট দেখা যায়</small>
+    </div>
+    <div class="named-color">
+        <p>এই বক্সের ব্যাকগ্রাউন্ডে কালার হিসেবে নেমিং কালার ব্যবহার করা হয়েছে</p>
+    </div>
+
+    <div class="hex-code">
+        <p>এই বক্সের ব্যাকগ্রাউন্ডে ছয়টি কোডের কালার কোড ব্যবহার করা হয়েছে।</p>
+    </div>
+    <div class="rgb-code">
+        <p>এই বক্সের ব্যাকগ্রাউন্ডে লাল সবুজ আর নীল এর কম্বিনেশন করা হয়েছে (rgb)</p>
+    </div>
+    <div class="width">
+        <p>এখানে এই বক্সটার প্রশস্ততা টেস্ট করা হচ্ছে</p>
+    </div>
+
+    <div class="height">
+        <p>এখানে বক্সের উচ্চতা পরিক্ষা করা হচ্ছে</p>
+    </div>
+
+    <div class="font-style">
+        <p>এখানে দেখবেন কিভাবে বিভিন্ন স্টাইলের ফন্ট ব্যবহার করা যায়।</p>
+        <p class="font">This is Font Change Portion</p>
+    </div>
+        
+</body>
+</html>
