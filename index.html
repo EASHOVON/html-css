@@ -14,7 +14,8 @@
         }
 
         *{
-            font-size: 1.2rem;
+            font-size: 1rem;
+            box-sizing: border-box;
         }
 
         div{
@@ -70,10 +71,234 @@
         .border-rad{
             border-radius: 30px;
         }
+
+        .align{
+            text-align: center;
+        }
+
+        .align-r{
+            text-align: right;
+        }
+
+        .blk{
+            background-color: darkgoldenrod;
+            padding: 30px;
+        }
+
+        .inline{
+            background-color: darkseagreen;
+            padding: 40px;
+        }
+
+        .inline-b{
+            display: inline-block;
+            height: 400px;
+            width: 100%;
+            background-color: darkslateblue;
+            color: wheat;
+        }
+
+        .border-img{
+            width: 600px;
+            margin: 40px auto;
+            border: none;
+            box-shadow: 10px 20px 30px grey;
+            border-left: 5px solid;
+            border-image: url('nature.jpg');
+            border-image-slice: 10;
+        }
+
+
+        .hover-test:hover{
+            display: inline-block;
+            background-color: crimson;
+            color: white;
+            text-decoration: none;
+            padding: 20px 30px;
+        }
+
+         
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+input:focus{
+    color: red;
+}
+
+.nth-child{
+    list-style-type: none;
+}
+
+.nth-child li:first-child{
+    color: red;
+}
+
+.nth-child li:last-child{
+    color: saddlebrown;
+}
+
+.nth-child li:nth-child(4){
+    color: tomato;
+}
+
+.sudo-element .box{
+    position: relative;
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    left: -10px;
+    background-color: tomato;
+    border-radius: 10px 0 0 10px;
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: -10px;
+    left: 0;
+    background-color: tomato;
+    border-radius: 62px 62px 0px 0;
+}
+
+
+.position{
+    position: static;
+    background-color: tomato;
+}
+
+header{
+    position: fixed;
+    background-color: burlywood;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.positionss{
+    position: sticky;
+    background-color: crimson;
+    top: 0;
+}
+
+table{
+    border: 5px solid crimson;
+    width: 80%;
+    height: auto;
+    border-collapse: collapse; 
+}
+
+th, td{
+    border: 5px solid crimson;  
+}
+
+tr{
+    text-align: center;
+}
+
+
+
+.menu-list{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list > li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menu-list > li > a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 10px;
+    transition: ease-out .3s;
+}
+
+.menu-list > li > a:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.menu-list > li:nth-child(5):hover .dropdown li {
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+}
+
+.dropdown li {
+    display: none;
+    margin: 10px 0;
+}
+
+.dropdown li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 10px;
+    transition: ease-out .3s;
+}
+
+.dropdown li a:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.top{
+    margin-top: 250px;
+}
+
+.transform-test{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    margin: 0 auto;
+    transition: transform 1s;
+}
+
+.transform-test:hover{
+    transform: rotate(360deg);
+}
+
+}
     </style>
 </head>
 <body>
-    <div>
+    <div class="top">
         <h1>যা যা শিখলাম আমরা মাইলস্টোন-১ ও মাইলস্টোন-২ এ</h1>
         <p>এখন যে ট্যাগ এর মধ্যে লেখাগুলো রেখেছি এটির মাধ্যমে প্যারাগ্রাফ আকারে টেক্সকে ওয়েব সাইটে দেখানো হয়। এছাড়া কিভাবে লেখাকে <b>একটু মোটা</b>, <i>একটু বাকা</i>, <strong>একটু স্ট্রং</strong> কিভাবে দেখানো যায় তা শিখলাম।</p>
     </div>
@@ -162,6 +387,183 @@
 
     <div class="border-rad">
         <p>এখানে আমরা বর্ডার রেডিয়াস টেস্ট করবো</p>
+    </div>
+
+    <div>
+        <p class="align">এই টেক্সটকে টেক্স এলাইন করা হবে মাঝখানে</p>
+        <p class="align-r">এই টেক্সটকে টেক্সট এলাইন ডানে করবো</p>
+        <h1 class="blk">আমি ব্লক লেভেল এলিমেন্ট</h1><br> <br> <br>
+        <a class="inline" href="#">আমি ইনলাইন</a> <br> <br> <br> <br> <a class="inline-b" href="#">আর আমিও ইনলাইন এবং আমাদের মধ্যে মার্জিন , হাইট , উইডথ এড করলে তা কাজ করবে না। কিন্তু সিএসএস এর মাধ্যমে আমাদের আমাদের ব্লক এলিমেন্ট ও করতে পারবে আবার ইনলাইন ব্লক ও করতে পারবে।</a>
+    </div>
+
+    <div class="border-img">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque enim fuga nisi aut nobis ad, expedita possimus impedit molestias ipsum ducimus necessitatibus fugiat, quos, totam distinctio sit deserunt asperiores officiis pariatur numquam quae? Itaque non illum amet impedit. Quisquam repudiandae asperiores eum magni. Laudantium corrupti ex ipsam molestias voluptatibus velit reprehenderit, officia quia praesentium accusamus possimus dolores, ducimus aut molestiae veniam? Nemo, possimus quasi culpa quaerat, explicabo debitis quibusdam velit voluptatem beatae repellendus repudiandae quia facilis esse dicta consectetur ad fugit fugiat, facere nulla. Accusamus tempore necessitatibus ipsa libero ut iusto molestias quas totam. Omnis earum nesciunt ex temporibus.</p>
+    </div>
+
+    <div class="sudo">
+        <p>এখানে ‍সুডো ক্লাস প্র্যাকটিস করবো</p> <br>
+        <a class="hover-test" href="#">আমাকে হোভার করলে আমি চেঞ্জ হয়ে যাবো</a> <br> <br>
+        <a class="visited" href="#">আমি যদি ভিজিটেড হই তাহলে আমার কালার চেঞ্জ হবে</a> <br> <br>
+
+        <p>এখানে ফোকাস সুডো ক্লাস দেখবো
+            <input type="text">
+        </p>
+
+        <p>এখানে দেখবো এনথ চাইল্ড সুডো ক্লাস দেখবো
+            <ul class="nth-child">
+                <li>Something-1</li>
+                <li>Something-2</li>
+                <li>Something-3</li>
+                <li>Something-4</li>
+                <li>Something-5</li>
+            </ul>
+        </p>
+
+    </div>
+
+    <div class="sudo-element">
+        <div class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptates quibusdam nisi facere dicta eaque beatae quia. Tempore, quod eos.</p>
+        </div>
+    </div>
+
+    <div class="position-test">
+        <div class="position">
+            <p>আমি পজিশন স্ট্যাটিক</p>
+        </div>
+        <header class="positions">
+            <p style="text-align:center;">আমার পজিশন ফিক্সড</p>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a href="#">বাড়ি</a></li>
+                    <li><a href="#">হাসের খামার</a></li>
+                    <li><a href="#">মুরগীর খামার</a></li>
+                    <li><a href="#">কচ্ছপের খামার</a></li>
+                    <li><a href="#">গবাদি পশুর খামার</a>
+                        <ul class="dropdown">
+                            <li><a href="#">গরু</a></li>
+                            <li><a href="#">ছাগল</a></li>
+                            <li><a href="#">ভেড়া</a></li>
+                            <li><a href="#">মহিষ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">কুমিরের খামার</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="positionss">
+            <p>আমার পজিশন স্টিকি</p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex sit aut saepe ad nisi non recusandae modi deleniti. Eos possimus et, quis atque itaque beatae ipsum delectus sit veritatis inventore animi. Repudiandae tempore maxime deserunt odio officiis perspiciatis dolorum non laboriosam sunt sit sequi pariatur, consequatur debitis voluptate iusto libero labore fugiat ipsum. Quisquam quas deserunt odio earum soluta rerum eveniet, quaerat beatae delectus quidem culpa non facere illo praesentium consequuntur commodi provident ad voluptatibus voluptatem. Ratione impedit aut harum, earum rem voluptatem eveniet voluptas velit excepturi exercitationem inventore dolores totam accusamus maxime, magnam est atque iusto, ipsam nemo quas doloremque doloribus necessitatibus vel? Voluptatum doloremque asperiores esse? Eveniet neque commodi reprehenderit soluta libero? Consequuntur adipisci itaque esse dicta quis? Voluptatum voluptas quos dolorum ducimus velit beatae voluptatem excepturi laborum maiores enim molestias corrupti amet, ad illum, nisi accusamus maxime ea cupiditate sapiente ullam, omnis et vero ab est. At quidem quaerat repellendus eaque minus incidunt ex dicta? Consequuntur explicabo veniam nobis sunt accusantium hic nulla magni ipsa vitae consectetur culpa fuga, autem, maxime accusamus esse itaque ab incidunt dolor eveniet ex. Ipsum sed inventore architecto adipisci quisquam earum omnis vel nihil eligendi amet cupiditate, impedit itaque similique commodi reprehenderit quidem delectus recusandae ducimus beatae incidunt, suscipit hic molestias dolore et? Magnam voluptas unde sit dicta aspernatur, quasi, omnis ipsam recusandae eos magni at aperiam suscipit illo aliquam beatae placeat harum nam voluptatum. Quam quis ratione exercitationem doloribus voluptas, sapiente nemo quo, libero praesentium aliquid iure ducimus corporis quasi dolores vel ea! Dolorum, alias. Deleniti doloremque quidem, sequi aut cumque corporis, voluptatum magni quo repudiandae doloribus non tempora temporibus explicabo. Quia, accusantium consequuntur. Reiciendis sunt pariatur ullam, autem minima consectetur quae voluptate voluptatibus possimus laudantium, sequi inventore tempora facere saepe id amet optio dolorum, rem maxime delectus commodi dolorem. Error atque inventore, earum ipsa dolorem repudiandae molestias aliquam totam! Nisi adipisci veniam autem ipsam sequi, libero laudantium eveniet, repellat porro ipsa eaque delectus placeat ab ducimus. Impedit nesciunt eveniet nulla ut blanditiis sequi quam in. Fugiat eaque aliquam officiis ipsum suscipit magni vel expedita nam quos, iusto incidunt ab nobis veritatis minus mollitia eum sapiente facilis, repellendus impedit. Possimus aut maxime porro suscipit obcaecati placeat aperiam earum neque cupiditate animi ab consectetur dignissimos reprehenderit non sint error nostrum consequuntur, aliquid quaerat officia voluptate veniam id sapiente. Vel nesciunt eos magni possimus quidem rerum magnam? Voluptatem corporis officiis modi impedit non obcaecati aliquid! Exercitationem sequi, sint blanditiis magni ea quam dicta totam minima earum inventore adipisci sed pariatur id nostrum necessitatibus quaerat placeat, eos dignissimos at veritatis consequatur perferendis incidunt illum est? Laborum quam laudantium consequuntur nesciunt? Possimus fuga, harum facilis dignissimos placeat aspernatur corporis delectus nihil odit labore nam esse cum sit mollitia soluta accusamus distinctio modi. Voluptatem corrupti aspernatur soluta eveniet magni maiores quidem eaque qui! Ratione exercitationem eius in reiciendis obcaecati commodi doloribus eos autem unde enim voluptate quisquam vel quaerat voluptatum animi, facere quasi dignissimos expedita deserunt. Magnam rerum minus necessitatibus ad illo! Vero laborum cum expedita.
+        </p>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem praesentium ducimus placeat accusamus? Magni ipsum, voluptatibus aspernatur exercitationem molestiae in ab dolore quisquam ratione, a cum praesentium dolor omnis officia nam nihil eveniet dicta placeat ex debitis minima? Veritatis quaerat atque in facilis nostrum a non magni repellat numquam qui. Veritatis quibusdam nesciunt ad iste asperiores explicabo quasi doloribus saepe soluta unde animi recusandae harum mollitia est odit nobis corporis, eius consectetur aliquid laborum impedit dolores necessitatibus assumenda quae! Quae quisquam, explicabo qui dignissimos ipsam reiciendis ab dicta placeat rem est rerum. Ad, quibusdam, error placeat debitis veniam fugit minus eos inventore doloribus, labore ullam ipsum architecto eveniet provident est aut aliquid veritatis possimus. Facere, sapiente iure temporibus sunt dicta tempora est quae ab praesentium nam ducimus. Ipsum iure possimus explicabo! Ullam dolor impedit tenetur amet deserunt minus incidunt nisi veritatis perspiciatis. Aliquid, nam ea. Quasi aut rem repellendus assumenda adipisci autem magni aperiam error quaerat quas, pariatur asperiores illum dolorum fugiat nulla minima consectetur impedit? Dolorem tempore similique reprehenderit dolore in nihil, qui doloremque, eos dolor velit repellendus eius quae! Expedita quia eveniet nam dicta suscipit possimus omnis incidunt assumenda iste in est, cupiditate reprehenderit architecto animi cum? Alias dolore omnis illum amet odit placeat vitae aut nobis quod iste ad, saepe sit. Quibusdam error quod similique debitis eum, ipsa veniam vel aliquam dolor explicabo perferendis porro, id voluptatem? Laborum aut, quis aliquid porro tempore unde distinctio corporis sequi beatae incidunt consectetur, quaerat expedita sint eos pariatur eaque quibusdam. Quos, culpa. Maiores amet asperiores quisquam sit a et nostrum quia, unde velit suscipit modi atque quibusdam numquam tenetur odit porro at dolor laudantium voluptates sint recusandae officia magni, perspiciatis hic? Harum nemo quia, possimus itaque officia inventore est aperiam ducimus nostrum a aliquid eligendi? Alias aliquam dolor quibusdam voluptatibus iure magni quia dolores omnis nemo dolorum. Neque dolorem, dicta enim rerum cupiditate eaque minima quas perspiciatis distinctio architecto optio itaque ut aperiam ipsum repudiandae odit. Aliquam, recusandae laboriosam. Quo voluptates sit ullam labore obcaecati explicabo aspernatur molestias dignissimos sunt enim aliquid officiis, doloremque unde voluptas. Sed quisquam non animi officia quidem, perspiciatis natus nesciunt nobis facilis, commodi aliquid, recusandae possimus neque odit temporibus accusamus est autem. Aut ut aspernatur, dignissimos ad voluptas doloribus excepturi voluptatibus consequatur omnis sapiente quidem eligendi magni veniam ex velit obcaecati quis adipisci iure cupiditate. Numquam, vel maxime, voluptas modi at error, aut tenetur dignissimos perspiciatis sed ipsa accusantium. Dicta corporis maiores adipisci possimus deserunt debitis illo voluptate, aliquam enim consectetur vero! Libero, facilis. At iure tenetur, est officia ut cumque illum? Ab, asperiores ipsam. Assumenda necessitatibus animi, voluptates repudiandae eos quo qui quibusdam? Minima nam maiores, ipsam, porro, neque vel blanditiis eum ea error dolorum eius ut soluta nulla ipsum deserunt aperiam eaque cum beatae ab. Debitis iste cumque cupiditate repudiandae tempore doloribus quasi molestiae eius? Libero, ipsa eos? Optio nemo sequi atque, fuga est quia magnam cum illo nesciunt, placeat reprehenderit molestias voluptates molestiae iusto ut accusantium vel suscipit, recusandae iure mollitia? At perspiciatis numquam dignissimos nihil ducimus optio alias quod voluptatem incidunt nulla, rem ullam impedit eos? Pariatur quo, amet corporis eos nihil at recusandae! Unde accusantium aut obcaecati perferendis provident. Quia odit dolor voluptas asperiores temporibus qui vitae illo quibusdam libero dolorum earum, quae fuga exercitationem beatae obcaecati deserunt sint eligendi, laboriosam ullam iusto aspernatur ratione incidunt minus consequatur? Aut deserunt voluptatem corrupti quam sequi tenetur doloremque, alias aliquam ab assumenda atque consectetur tempora eius inventore quas aliquid voluptate dicta dolore iste architecto necessitatibus. Enim modi voluptatem totam molestias debitis, officiis dicta aut nam voluptate? Odio suscipit aut doloribus itaque perferendis voluptatibus nisi voluptatum cum laudantium fuga! Officiis, labore placeat iusto pariatur sapiente commodi deserunt voluptas dolor, a molestiae sed veniam eius rerum saepe earum esse adipisci, ad aliquid laudantium fuga. Reprehenderit, quibusdam totam. Deserunt voluptas quos sequi qui assumenda, sint quam tenetur nesciunt eaque, at voluptate illum expedita fugiat obcaecati corporis possimus quia reiciendis? Excepturi provident at aliquam sunt enim facere maxime, optio asperiores. Ut ipsum laboriosam fugit natus incidunt eaque saepe nesciunt veniam minima. Id esse, nulla iste soluta iusto facere, animi nostrum error, neque adipisci ab fugit mollitia aliquid voluptatum perspiciatis debitis repellendus officiis dolore aperiam blanditiis voluptas? Consectetur doloribus error adipisci sint officia itaque pariatur, nisi voluptatum quae, nobis minus, hic architecto maxime est aliquam laudantium praesentium veritatis tempore ipsa sit? Repellendus hic numquam, voluptates laudantium iure iusto facilis esse, nam alias ipsam rerum debitis dolorem delectus ducimus officiis aliquam quos quam aut consectetur. Ipsum, error, nesciunt, vel adipisci incidunt nemo magnam suscipit quae eligendi debitis cupiditate? Recusandae, expedita minus ad est non blanditiis sapiente totam maxime nulla harum tenetur sint iste adipisci deserunt officia impedit animi voluptatem, odit accusamus commodi, facere iure eaque architecto quae. Qui, aliquid sapiente. Dicta iusto possimus alias voluptas iste consequuntur cum impedit ex ad quam voluptatibus ea modi amet, maiores blanditiis pariatur beatae ratione illum dolor porro corrupti. Facere nisi excepturi praesentium tempore veritatis voluptates! Repellendus deserunt enim perspiciatis odio maxime, libero assumenda consequuntur ab pariatur impedit asperiores illum id sint ipsam quasi consectetur aliquam quaerat quos. Impedit, laudantium. Facere laudantium dolor provident sed laboriosam nemo at voluptatem dolorem earum! Tempore rem quisquam natus dolorum ex, quibusdam eveniet quasi vel eum illo autem molestias. Laudantium explicabo praesentium corporis excepturi autem itaque nulla beatae cupiditate sed, eum dolorem labore et non, aut ratione ex consequuntur aspernatur tempore veniam, asperiores deserunt! Exercitationem numquam accusamus modi, praesentium et, vero inventore nesciunt obcaecati voluptatem asperiores beatae nostrum iste tempore assumenda quasi! Odio sit consectetur id doloremque error at, laboriosam odit ad quaerat voluptatum commodi magni eaque incidunt beatae aut sint quis quibusdam deleniti eligendi quae non. Sapiente in ut nesciunt blanditiis illo laboriosam itaque accusamus fugiat suscipit, dolores atque odio? Doloribus, nisi sit iste dolorum ad pariatur autem, voluptate aperiam illo nihil velit quia possimus deserunt harum culpa voluptatibus alias quaerat itaque odit, error fugit tempore nam corrupti. Iusto nisi commodi nihil et iure beatae eveniet quae. Assumenda suscipit quod iste sed, ex tempore similique?</p>
+    </div>
+
+    <div>
+        <p>অডিও ফাইল টেস্টিং</p>
+        <audio controls src="audio/audio.mp3"></audio>
+    </div>
+
+    <div>
+        <p>ভিডিও ফাইল টেস্টিং</p>
+        <video controls autoplay src="videos/video.mp4"></video>
+    </div>
+
+    <div>
+        <p>ইউটিউব থেকে ভিডিও দেখাবো</p>
+        <iframe width="815" height="419" src="https://www.youtube.com/embed/FgrmNWhoIJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <p>এখানে আমরা আই ফ্রেম এর মাধ্যমে কোনো একটা ওয়েবসাইট আমার এখানে দেখাবো</p>
+        <iframe src="https://madanichannelbangla.tv/" width="100%" height="786">
+        </iframe>
+    </div>
+
+    <div>
+        <p>এখন দেখবো এইচটিএমএল টেবিল</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Something-1</th>
+                    <th>Something-2</th>
+                    <th>Something-3</th>
+                    <th>Something-4</th>
+                    <th>Something-5</th>
+                    <th>Something-6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Something-1</td>
+                    <td>Something-2</td>
+                    <td>Something-3</td>
+                    <td>Something-4</td>
+                    <td>Something-5</td>
+                    <td>Something-6</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Something-1</td>
+                    <td>Something-1</td>
+                    <td>Something-1</td>
+                    <td>Something-1</td>
+                    <td>Something-1</td>
+                    <td>Something-1</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div>
+        <h2>জামালের মার পিঠার ঝুলি, খাইতে হলে ফরম পূরন করে ফেলি</h2>
+        <form action="">
+            <p>তোমার নাম কিতাঃ <input type="text" name="name" id="" placeholder="নামডা লেইখা ফালাও তো"></p>
+            <p>ইমেইল ডা দিয়া রাখো নতুন পিঠা আইলে মেইল করমুনেঃ <input type="email" name="name" id="" placeholder="ইমেইল ডা লেইহা ফালাও"></p>
+            <fieldset>
+                <legend>কি পিঠা খাইবা কইবা না?</legend>
+                <p>
+                    <label for="chitoy">
+                        <input type="radio" name="pitha" id="chitoy">চিতই পিঠা
+                    </label>
+                </p>
+                <p>
+                    <label for="vapa">
+                        <input type="radio" name="pitha" id="vapa">ভাপা পিঠা
+                    </label>
+                </p>
+                <p>
+                    <label for="tell">
+                        <input type="radio" name="pitha" id="tell">তেইলা পিঠা
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>ভর্তা লাগবো না মামা?</legend>
+                <p><label for="sorisa"><input type="checkbox" name="vorta" id="sorisa">সরিষা ভর্তা</label></p>
+                <p><label for="shutki"><input type="checkbox" name="vorta" id="shutki">আলু ভর্তা</label></p>
+                <p><label for="begun"><input type="checkbox" name="vorta" id="begun">শুটকি ভর্তা(গন্ধযুক্ত)</label></p>
+            </fieldset>
+            <p>এহানে কিছু লেইখা দিতেও পারো</p> <br>
+            <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+            <button type="submit">পাঠাইয়া দাও</button><button type="reset">ফরম খালি করে ফেলো</button>
+        </form>
+    </div>
+    <div>
+        <div class="transform-test">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatem fuga sit eius! Eaque tempore quia nobis nulla officia dolor.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <img src="me.jpg" alt="">
     </div>
         
 </body>
