@@ -8,294 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-    <style>
-        body{
-            font-size: 62.5%;
-        }
-
-        *{
-            font-size: 1rem;
-            box-sizing: border-box;
-        }
-
-        div{
-            border: 2px solid orange;
-            margin: 20px 20px;
-            padding: 20px 20px;
-        }
-
-        img{
-            width: 50%;
-            height: auto;
-        }
-        input {
-            width: 60%;
-        }
-
-        .named-color{
-            background-color: orange;
-        }
-
-        .hex-code{
-            background-color: #e5c891;
-        }
-
-        .rgb-code{
-            background-color: rgb(153, 102, 83);
-        }
-
-        .width{
-            width: 500px;
-        }
-
-        .height{
-            height: 400px;
-        }
-
-        .font{
-            font-family: 'Zen Tokyo Zoo', cursive;
-            font-size: 60px;
-        }
-
-        #span-test .heading {
-            font-size: 1.7rem;
-            color: orange;
-            font-weight: bold;
-        }
-
-        #span-test .heading span{
-            font-size: 1.7rem;
-            color: crimson;
-        }
-
-        .border-rad{
-            border-radius: 30px;
-        }
-
-        .align{
-            text-align: center;
-        }
-
-        .align-r{
-            text-align: right;
-        }
-
-        .blk{
-            background-color: darkgoldenrod;
-            padding: 30px;
-        }
-
-        .inline{
-            background-color: darkseagreen;
-            padding: 40px;
-        }
-
-        .inline-b{
-            display: inline-block;
-            height: 400px;
-            width: 100%;
-            background-color: darkslateblue;
-            color: wheat;
-        }
-
-        .border-img{
-            width: 600px;
-            margin: 40px auto;
-            border: none;
-            box-shadow: 10px 20px 30px grey;
-            border-left: 5px solid;
-            border-image: url('nature.jpg');
-            border-image-slice: 10;
-        }
-
-
-        .hover-test:hover{
-            display: inline-block;
-            background-color: crimson;
-            color: white;
-            text-decoration: none;
-            padding: 20px 30px;
-        }
-
-         
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-input:focus{
-    color: red;
-}
-
-.nth-child{
-    list-style-type: none;
-}
-
-.nth-child li:first-child{
-    color: red;
-}
-
-.nth-child li:last-child{
-    color: saddlebrown;
-}
-
-.nth-child li:nth-child(4){
-    color: tomato;
-}
-
-.sudo-element .box{
-    position: relative;
-}
-
-.box::before{
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 100%;
-    top: 0;
-    left: -10px;
-    background-color: tomato;
-    border-radius: 10px 0 0 10px;
-}
-
-.box::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 10px;
-    top: -10px;
-    left: 0;
-    background-color: tomato;
-    border-radius: 62px 62px 0px 0;
-}
-
-
-.position{
-    position: static;
-    background-color: tomato;
-}
-
-header{
-    position: fixed;
-    background-color: burlywood;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 20px;
-}
-
-.positionss{
-    position: sticky;
-    background-color: crimson;
-    top: 0;
-}
-
-table{
-    border: 5px solid crimson;
-    width: 80%;
-    height: auto;
-    border-collapse: collapse; 
-}
-
-th, td{
-    border: 5px solid crimson;  
-}
-
-tr{
-    text-align: center;
-}
-
-
-
-.menu-list{
-    display: flex;
-    justify-content: center;
-}
-
-.menu-list > li{
-    list-style: none;
-    margin-right: 20px;
-}
-
-.menu-list > li > a{
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    background-color: blueviolet;
-    display: inline-block;
-    padding: 20px 30px;
-    border-radius: 10px;
-    transition: ease-out .3s;
-}
-
-.menu-list > li > a:hover{
-    background-color: crimson;
-    color: white;
-}
-
-.menu-list > li:nth-child(5):hover .dropdown li {
-    display: block;
-}
-
-.dropdown{
-    position: absolute;
-}
-
-.dropdown li {
-    display: none;
-    margin: 10px 0;
-}
-
-.dropdown li a{
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    background-color: blueviolet;
-    display: inline-block;
-    padding: 20px 50px;
-    border-radius: 10px;
-    transition: ease-out .3s;
-}
-
-.dropdown li a:hover{
-    background-color: crimson;
-    color: white;
-}
-
-.top{
-    margin-top: 250px;
-}
-
-.transform-test{
-    width: 200px;
-    height: 200px;
-    background-color: tomato;
-    margin: 0 auto;
-    transition: transform 1s;
-}
-
-.transform-test:hover{
-    transform: rotate(360deg);
-}
-
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="top">
@@ -432,7 +145,6 @@ tr{
             <p>আমি পজিশন স্ট্যাটিক</p>
         </div>
         <header class="positions">
-            <p style="text-align:center;">আমার পজিশন ফিক্সড</p>
             <nav class="menu">
                 <ul class="menu-list">
                     <li><a href="#">বাড়ি</a></li>
@@ -564,6 +276,20 @@ tr{
 
     <div style="display: none;">
         <img src="me.jpg" alt="">
+    </div>
+
+
+    <div class="animation">
+        <p>এখানে আমরা ট্রানজিশন ট্রান্সফরম প্র্যাকটিস করবো</p>
+        <div class="ani-box">
+
+        </div>
+    </div>
+
+    <div class="landing">
+        <div class="lan-con">
+            <a class="ani-btn" href="animation.html">এনিমেশনের খেলা দেখুন</a>
+        </div>
     </div>
         
 </body>
