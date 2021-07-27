@@ -87,21 +87,3 @@ body{
     opacity: 1;
   }
 }
-
-/* * 
-  
- 
-  
-  
-    transition-property: transform;
-    transition-duration: 1s;
-  }
-  
-  .btn:hover {
-    transform: rotateY(180deg);
-  }
-  
-  @keyframes btn {
-    0%   {opacity:0}
-    100% {opacity: 1}
-  } */
